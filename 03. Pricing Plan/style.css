@@ -1,0 +1,23 @@
+/*====================
+     GENERAL STYLING 
+  ====================*/
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    font-size: 62.5%;
+    /* Color Variables */
+    /* --primary-white: #fff;
+    --primary-pink: rgb(245, 160, 203);
+    --primary-light-gray: #f7f6f6;;
+    --primary-dark-gray: #989898; */
+  }
+  body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /*====================
+    ====================*/
