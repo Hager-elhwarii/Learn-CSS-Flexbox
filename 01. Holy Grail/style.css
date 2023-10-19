@@ -9,11 +9,11 @@
 :root {
   font-size: 62.5%;
   /* Color Variables */
-  --primary-orange: rgb(241, 76, 5);
-  --primary-blue: rgb(57, 57, 245);
-  --primary-yellow: rgb(230, 230, 29);
-  --primary-pink: rgb(219, 39, 129);
-  --primary-lightgreen: rgb(121, 212, 121);
+  --primary-purple: rgb(195, 142, 245);
+  --primary-orange: rgb(248, 178, 49);
+  --primary-pink: pink;
+  --primary-green: rgb(113, 239, 113);
+  --primary-skyblue: rgb(118, 225, 198);
 }
 body {
   height: 100vh;
@@ -51,25 +51,25 @@ body {
   align-items: center;
 }
 .header {
-  background-color: rgb(195, 142, 245);
+  background-color: var(--primary-purple);
   height: 22rem;
   font-size: 2.6rem;
 }
 .main {
-  background-color: pink;
+  background-color: var(--primary-pink);
   height: 30rem;
 }
 div > :not(.header) {
   font-size: 2.2rem;
 }
 .left-aside {
-  background-color: orange;
+  background-color: var(--primary-orange);
 }
 .right-aside {
-  background-color: lime;
+  background-color: var(--primary-green);
 }
 .footer {
-  background-color: rgb(118, 225, 198);
+  background-color: var(--primary-skyblue);
 
   height: 16rem;
 }
