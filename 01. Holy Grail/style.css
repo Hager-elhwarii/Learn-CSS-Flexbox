@@ -8,6 +8,12 @@
 }
 :root {
   font-size: 62.5%;
+  /* Color Variables */
+  --primary-orange: rgb(241, 76, 5);
+  --primary-blue: rgb(57, 57, 245);
+  --primary-yellow: rgb(230, 230, 29);
+  --primary-pink: rgb(219, 39, 129);
+  --primary-lightgreen: rgb(121, 212, 121);
 }
 body {
   height: 100vh;
@@ -17,4 +23,79 @@ body {
 /*====================
   ====================*/
 
-  
+.flex-wrapper {
+  height: 100%;
+  display: flex;
+  /*
+   flex-flow:
+   Specifies the direction of a flex container, 
+   as well as its wrapping behavior. 
+  */
+  flex-flow: row wrap;
+  text-align: center;
+  text-transform: capitalize;
+}
+.flex-wrapper > * {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  flex: 1 100%;
+}
+.header,
+.main,
+.left-aside,
+.right-aside,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  background-color: rgb(195, 142, 245);
+  height: 22rem;
+  font-size: 2.6rem;
+}
+.main {
+  background-color: pink;
+  height: 30rem;
+}
+div > :not(.header) {
+  font-size: 2.2rem;
+}
+.left-aside {
+  background-color: orange;
+}
+.right-aside {
+  background-color: lime;
+}
+.footer {
+  background-color: rgb(118, 225, 198);
+
+  height: 16rem;
+}
+
+/*====================
+   RESPONSIVE STYLING
+  ====================*/
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3;
+  }
+  .left-aside {
+    order: 1;
+  }
+  .right-aside {
+    order: 2;
+  }
+  .main {
+    order: 2;
+  }
+  .footer {
+    order: 4;
+  }
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+  }
+}
