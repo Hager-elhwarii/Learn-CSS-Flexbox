@@ -1,23 +1,160 @@
 /*====================
      GENERAL STYLING 
   ====================*/
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    font-size: 62.5%;
-    /* Color Variables */
-    /* --primary-white: #fff;
-    --primary-pink: rgb(245, 160, 203);
-    --primary-light-gray: #f7f6f6;;
-    --primary-dark-gray: #989898; */
-  }
-  body {
-    height: 100vh;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  /*====================
-    ====================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  /* Color Variables */
+   --primary-white: #fff;
+   --primary-black: #000;
+   --primary-light-gray: #f7f6f6;;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*====================
+  ====================*/
+.container {
+  height: 100%;
+}
+.flex-wrapper h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+.flex-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.col {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.col .flex-item {
+  padding: 2rem 1.4rem;
+  width: 100%;
+  max-width: 330px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.col > .flex-item:first-child {
+  background-color: #6247aa;
+  background-image: linear-gradient(316deg, #8a73cc 0%, #a594f9 74%);
+}
+.col > .flex-item:first-child + div {
+  background-color: #d14545;
+  background-image: linear-gradient(316deg, #d14545 0%, #ff9933 74%);
+}
+.col > .flex-item:first-child + div + div {
+  background-color: #ee8e6b;
+  background-image: linear-gradient(315deg, #ee8e6b 0%, #ef6da0 74%);
+}
+.col .flex-item > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  color: var(--primary-white);
+  padding-top: 1rem;
+}
+.col .flex-item > :first-child > h3 {
+  text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 1.4rem;
+}
+.col .flex-item > :first-child > p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2.4rem;
+  background-color: var(--primary-light-gray);
+  color: var(--primary-black);
+}
+.flex-item > p {
+  padding: 4rem 1.4rem 1rem;
+  font-size: 1.5rem;
+}
+.flex-item > p::first-letter {
+  text-transform: capitalize;
+}
+.flex-item > p,
+.flex-item > p ~ div {
+  color: var(--primary-white);
+}
+.flex-item > p ~ div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.4rem;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.flex-item > h2,
+.flex-item > h3 {
+  text-align: center;
+}
+.flex-item > h2 {
+  font-size: 5.5rem;
+  margin-bottom: -1rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  color: var(--primary-white);
+}
+.flex-item > h2 + h3 {
+  color: var(--primary-light-gray);
+
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.flex-item > h2 > span {
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding-right: 0.5rem;
+  color: var(--primary-light-gray);
+}
+.flex-item button {
+  margin: 5rem auto 1.4rem;
+  display: block;
+  padding: 1.1rem 2rem;
+  border: none;
+  outline: none;
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  letter-spacing: 1px;
+}
+.flex-item button::first-letter {
+  text-transform: capitalize;
+}
+.flex-item button:hover {
+  cursor: pointer;
+}
