@@ -19,7 +19,7 @@ body {
 }
 
 /*====================
-    ====================*/
+  ====================*/
 .container {
   height: 100%;
 }
@@ -40,6 +40,7 @@ body {
   max-height: 550px;
   width: 100%;
   max-width: 900px;
+  margin: 2rem;
 }
 .flex-wrapper > div > :first-child {
   flex: 2;
@@ -64,14 +65,15 @@ body {
   font-weight: 600;
 }
 .flex-wrapper > div > :first-child > :first-child p:first-child + p + p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 200;
   color: #dadada;
 }
 .flex-wrapper > div > :first-child > :first-child p:first-child + p + p > span {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #eee;
   font-weight: 100;
+  display: block;
 }
 .flex-wrapper
   > div
@@ -177,4 +179,73 @@ button {
 button:hover {
   cursor: pointer;
   background-color: rgb(81, 81, 211);
+}
+
+/*======================
+    RESPONSIVE STYLING
+  ======================*/
+
+@media all and (max-width: 800px) {
+  .flex-wrapper > div > :first-child {
+    flex: auto;
+    margin-right: 0;
+  }
+  .flex-wrapper > div > :first-child > :first-child p:first-child {
+    font-size: 4rem;
+  }
+  .flex-wrapper > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-height: max-content;
+    max-width: fit-content;
+    margin: 0;
+    border-radius: 0;
+    /* margin: 2rem 0; */
+  }
+  .flex-wrapper > div > :first-child > :last-child {
+    text-align: start;
+  }
+}
+@media all and (max-width: 660px) {
+  .flex-wrapper > div {
+    width: 100%;
+    max-width: max-content;
+  }
+  .flex-wrapper > div > :first-child > :first-child p:first-child {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .flex-wrapper > div > :first-child > :first-child p:first-child + p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  .flex-wrapper > div > :last-child {
+    flex: auto;
+    margin-right: 0;
+    padding-bottom: 2rem;
+  }
+}
+@media all and (max-width: 560px) {
+  body {
+    background-color: #e7e9eb;
+  }
+  /* .flex-wrapper > div {
+    height: 100vh;
+  } */
+  .flex-wrapper > div > :first-child {
+    text-align: center;
+  }
+  .flex-wrapper > div > :first-child > :last-child {
+    text-align: center;
+  }
+  .flex-wrapper > div > :last-child > :first-child {
+    display: block;
+    margin: 2.2rem 0 0;
+  }
+  .flex-wrapper > div > :last-child > :first-child > div {
+    margin-bottom: 2.2rem;
+  }
 }
