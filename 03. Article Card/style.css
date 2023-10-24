@@ -11,7 +11,7 @@
   font-size: 62.5%;
   /* Color Variables */
   --primary-white: #fff;
-  --primary-black: rgb(34, 32, 32);
+  --primary-black: #000;
 }
 body {
   height: 100vh;
@@ -28,32 +28,38 @@ img {
 .container {
   height: 100%;
   display: flex;
+  flex-flow: row wrap;
+}
+.container > div {
+  width: 50%;
 }
 
 .container > :first-child {
   margin: auto;
   display: flex;
   justify-content: center;
+  position: relative;
+  /* border: 4px solid green; */
 }
 .container > :first-child img {
   width: 100%;
-  max-width: 85%;
   display: flex;
   justify-content: center;
 }
 .container > :first-child img + div {
   position: absolute;
-  bottom: 20.6rem;
+  bottom: 0;
   display: flex;
   flex-flow: column wrap;
   background-color: var(--primary-white);
-  border-radius: 0.2rem;
-  padding: 0.6rem 1.8rem;
+  padding: 1rem 1.8rem;
   font-size: 1.6rem;
   text-transform: capitalize;
   text-align: start;
-  width: 21.4%;
-  left: 7.3rem;
+  left: 0;
+  width: 100%;
+  max-width: 50%;
+  border-radius: 0.2rem;
 }
 .container > :first-child img + div span:last-child {
   font-size: 2.4rem;
@@ -62,6 +68,7 @@ img {
 .container > :last-child {
   display: flex;
   flex-flow: column wrap;
+  position: relative;
 }
 .container > :last-child img {
   display: block;
@@ -69,10 +76,9 @@ img {
 }
 .container > :last-child img + div {
   position: absolute;
-  bottom: 1.6rem;
-  margin-left: 1.6rem;
-  padding: 0.6rem 2rem;
-  width: 22.2%;
+  bottom: 0;
+  padding: 1rem 2rem;
+  width: 50%;
   background-color: var(--primary-white);
   font-size: 1.6rem;
   border-radius: 0.2rem;
@@ -88,10 +94,9 @@ img {
   display: flex;
   flex-flow: column wrap;
 }
-.container > div {
-  width: 50%;
-}
+
 .title {
+  z-index: 1;
   position: absolute;
   display: flex;
   flex-flow: column wrap;
@@ -111,9 +116,8 @@ img {
 }
 .title > div :nth-of-type(2),
 .title :nth-of-type(3) {
-  font-size: 10rem;
+  font-size: 8rem;
   color: var(--primary-black);
-
   line-height: 0.8;
   letter-spacing: 1.8rem;
   text-transform: uppercase;
@@ -121,18 +125,79 @@ img {
   font-weight: 700;
 }
 button {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--primary-black);
-    text-decoration: underline;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  text-decoration: underline;
 }
 button::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+/*======================
+    RESPONSIVE STYLING
+  ======================*/
+@media all and (max-width: 1110px) {
+  .title > div :nth-of-type(2),
+  .title :nth-of-type(3) {
+    font-size: 7rem;
+  }
+  .title {
+    text-align: center;
+  }
+  .container > :first-child {
+    width: 100%;
+    height: 50%;
+  }
+  .container > :last-child {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media all and (max-width: 900px) {
+  .title > div :nth-of-type(2),
+  .title :nth-of-type(3) {
+    font-size: 6rem;
+  }
+  .title {
+    top: 0;
+    display: block;
+    position: static;
+    height: fit-content;
+    margin: 2rem 0 6rem;
+  }
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    height: auto;
+  }
+  .container > :first-child img {
+    width: 100%;
+    max-width: max-content;
+  }
+}
+@media all and (max-width: 600px) {
+  .container {
+    gap: 4rem;
+  }
+  .title > div > :first-child {
+    font-size: 3rem;
+  }
+  .title > div :nth-of-type(2),
+  .title :nth-of-type(3) {
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+  }
+  .container > :first-child img + div,
+  .container > :last-child img + div {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+  }
+}
