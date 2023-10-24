@@ -1,22 +1,138 @@
 /*====================
      GENERAL STYLING 
   ====================*/
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    font-size: 62.5%;
-    /* Color Variables */
-     --primary-white: #fff;
-     --primary-black: #000;
-     --primary-light-gray: #eee;;
-  }
-  body {
-    height: 100vh;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  /*====================
-    ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Bitter:wght@500&family=Comfortaa:wght@300;400&family=Exo+2:wght@600&family=Inter:wght@300&family=Manrope:wght@300&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Poppins:wght@300;400;600;900&family=Quicksand:wght@400;500&family=Raleway&family=Russo+One&family=Source+Sans+3&family=Titan+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  /* Color Variables */
+  --primary-white: #fff;
+  --primary-black: rgb(34, 32, 32);
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center center;
+}
+
+/*====================
+  ====================*/
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.container > :first-child {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.container > :first-child img {
+  width: 100%;
+  max-width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.container > :first-child img + div {
+  position: absolute;
+  bottom: 20.6rem;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--primary-white);
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-align: start;
+  width: 21.4%;
+  left: 7.3rem;
+}
+.container > :first-child img + div span:last-child {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.container > :last-child {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container > :last-child img {
+  display: block;
+  flex: 1;
+}
+.container > :last-child img + div {
+  position: absolute;
+  bottom: 1.6rem;
+  margin-left: 1.6rem;
+  padding: 0.6rem 2rem;
+  width: 22.2%;
+  background-color: var(--primary-white);
+  font-size: 1.6rem;
+  border-radius: 0.2rem;
+}
+.container > :last-child img + div > span::first-letter {
+  text-transform: capitalize;
+}
+.container > :last-child img + div > span:last-child {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.container > :last-child > div {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container > div {
+  width: 50%;
+}
+.title {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+}
+.title > div > :first-child {
+  font-family: "Allura", cursive;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.title > div > :first-child::first-letter {
+  text-transform: capitalize;
+}
+.title > div :nth-of-type(2),
+.title :nth-of-type(3) {
+  font-size: 10rem;
+  color: var(--primary-black);
+
+  line-height: 0.8;
+  letter-spacing: 1.8rem;
+  text-transform: uppercase;
+  margin: 0.6rem 0 2rem;
+  font-weight: 700;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-black);
+    text-decoration: underline;
+}
+button::first-letter {
+    text-transform: capitalize;
+}
+button:hover {
+    cursor: pointer;
+}
+
