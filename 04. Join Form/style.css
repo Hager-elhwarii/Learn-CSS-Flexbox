@@ -234,11 +234,12 @@ button:hover {
   body {
     background-color: var(--primary-dark-gray);
   }
-  .flex-wrapper > div {
+  .container {
     height: auto;
   }
+  
   .flex-wrapper > div > :last-child {
-    margin-right: 0;
+    margin-right: 0;  
   }
  
   .flex-wrapper > div > :first-child {
