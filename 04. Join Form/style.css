@@ -235,7 +235,7 @@ button:hover {
     background-color: var(--primary-dark-gray);
   }
   .flex-wrapper > div {
-    height: 100%;
+    height: auto;
   }
   .flex-wrapper > div > :last-child {
     margin-right: 0;
