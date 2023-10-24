@@ -10,8 +10,10 @@
   font-size: 62.5%;
   /* Color Variables */
   --primary-white: #fff;
-  --primary-black: #000;
-  --primary-light-gray: #f7f6f6;
+  --primary-black: rgb(87, 87, 87);
+  --primary-blue: rgb(108, 108, 230);
+  --primary-light-gray: #eee;
+  --primary-dark-gray: #e7e9eb;
 }
 body {
   height: 100vh;
@@ -32,8 +34,9 @@ body {
   align-items: center;
 }
 .flex-wrapper > div {
+
   display: flex;
-  background-color: #e7e9eb;
+  background-color: var(--primary-dark-gray);
   border-radius: 1rem;
   padding: 2rem;
   height: 100%;
@@ -49,8 +52,9 @@ body {
   justify-content: space-between;
   padding: 0 1.6rem 1.6rem;
   width: 100%;
-  background-color: rgb(108, 108, 230);
-  color: #fff;
+  background-color: var(--primary-blue);
+
+  color: var(--primary-white);
   border-radius: 1rem;
   margin-right: 1.4rem;
 }
@@ -71,7 +75,7 @@ body {
 }
 .flex-wrapper > div > :first-child > :first-child p:first-child + p + p > span {
   font-size: 2.5rem;
-  color: #eee;
+  color: var(--primary-light-gray);
   font-weight: 100;
   display: block;
 }
@@ -96,14 +100,14 @@ body {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 100;
-  color: #eee;
+  color: var(--primary-light-gray);
 }
 .flex-wrapper > div > :last-child {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
   flex: 5;
-  background-color: #fff;
+  background-color: var(--primary-white);
   padding: 0 2rem;
   border-radius: 1rem;
 }
@@ -114,7 +118,7 @@ body {
 label {
   order: 1;
   font-size: 1.4rem;
-  color: rgb(87, 87, 87);
+  color: var(--primary-black);
   font-weight: 100;
   text-transform: capitalize;
 }
@@ -132,7 +136,7 @@ label {
   outline: 1.5px solid rgb(105, 105, 249);
 }
 .flex-wrapper > div > :last-child > :first-child input:focus + label {
-  color: rgb(105, 105, 249);
+  color: var(--primary-blue);
 }
 textarea {
   order: 2;
@@ -142,10 +146,10 @@ textarea {
   padding: 1rem 0 0 1.4rem;
 }
 textarea:focus {
-  outline: 1.5px solid rgb(105, 105, 249);
+  outline: 1.5px solid var(--primary-blue);
 }
 textarea:focus + label {
-  color: rgb(105, 105, 249);
+  color:var(--primary-blue);
 }
 
 .flex-wrapper > div > :last-child > :first-child > div {
@@ -167,9 +171,9 @@ textarea:focus + label {
 button {
   border: none;
   background: none;
-  background-color: rgb(108, 108, 230);
+  background-color: var(--primary-blue);
   text-transform: uppercase;
-  color: #fff;
+  color: var(--primary-white);
   font-size: 1.6rem;
   font-weight: 100;
   padding: 1.4rem 0;
@@ -184,7 +188,6 @@ button:hover {
 /*======================
     RESPONSIVE STYLING
   ======================*/
-
 @media all and (max-width: 800px) {
   .flex-wrapper > div > :first-child {
     flex: auto;
@@ -202,7 +205,6 @@ button:hover {
     max-width: fit-content;
     margin: 0;
     border-radius: 0;
-    /* margin: 2rem 0; */
   }
   .flex-wrapper > div > :first-child > :last-child {
     text-align: start;
@@ -230,11 +232,15 @@ button:hover {
 }
 @media all and (max-width: 560px) {
   body {
-    background-color: #e7e9eb;
+    background-color: var(--primary-dark-gray);
   }
-  /* .flex-wrapper > div {
-    height: 100vh;
-  } */
+  .flex-wrapper > div {
+    height: 100%;
+  }
+  .flex-wrapper > div > :last-child {
+    margin-right: 0;
+  }
+ 
   .flex-wrapper > div > :first-child {
     text-align: center;
   }
