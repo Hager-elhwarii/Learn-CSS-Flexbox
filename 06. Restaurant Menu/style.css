@@ -1,6 +1,7 @@
 /*====================
      GENERAL STYLING 
   ====================*/
+  @import url('https://fonts.googleapis.com/css2?family=Allura&family=Bitter:wght@500&family=Comfortaa:wght@300;400&family=Exo+2:wght@600&family=Inter:wght@300&family=Manrope:wght@300&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Poppins:wght@300;400;600;900&family=Quicksand:wght@400;500&family=Raleway&family=Rubik&family=Russo+One&family=Source+Sans+3&family=Titan+One&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -16,15 +17,114 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  background-color: #f3eaea;
 }
-
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  transition: 0.4s all ease-in-out;
+}
 /*====================
   ====================*/
+.container {
+  /* margin: 1rem; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows:auto;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  grid-template-areas: 
+  'one one two three'
+  'four five six six'
+  ;
+}
+.image-block {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-block:hover img {
+  transform: scale(1.2);
+}
+.image-block:hover  {
+  cursor: pointer;
+}
 
+.one {
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+ h1 {
+  font-family: 'Rubik', sans-serif;
+   font-size: 3rem;
+   letter-spacing: 8px;
+   padding-top: 1.5rem;
+   padding-left: 1rem;
+ }
+.image-block  {
+  position: relative;
+}
 
+.image-block  > div {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
 
+.image-block  > div > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem ;
+  color: #fff;
+  text-transform: capitalize;
+}
 
-  
+.image-block  > div > div >  button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+iconify-icon {
+  font-size: 1.8rem;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+  text-transform: capitalize;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(40px);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  color: #fff;
+  margin-left: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
 
 /*======================
     RESPONSIVE STYLING
