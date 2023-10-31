@@ -34,6 +34,13 @@ git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
 - [Iconify Design](https://iconify.design/)
 - [Flaticon](https://www.flaticon.com/)
 - [Netlify](https://www.netlify.com/)
+  
+## 🌼 Resources
+- [Learn CSS Grid](https://scrimba.com/learn/cssgrid)
+- [Grid Garden](https://cssgridgarden.com/)
+- [Grid by Example](https://gridbyexample.com/examples/)
+- [CSS Grid the easy way](https://www.youtube.com/watch?v=rg7Fvvl3taU)
+
 
 
 
