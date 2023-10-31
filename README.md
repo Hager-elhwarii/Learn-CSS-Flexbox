@@ -22,6 +22,12 @@ I created this repo as a resource to help you better understand and learn `CSS F
 - Html
 - CSS
 
+##  🔐 Run locally 
+
+```bash
+git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
+```
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
