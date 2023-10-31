@@ -9,7 +9,7 @@
  I created this repo as a resource to help you better understand and learn `CSS Flexbox`, and was organized in a way I thought made the most sense when I was learning it.
 
 ## 🚀 Getting Started 
-> This is a several examples practicing the key concepts of CSS FLexbox. Showing different Flexbox Layout use cases:
+> This is a several examples practicing key concepts of CSS FLexbox. Showing different Flexbox Layout use cases:
 
 - [Holy Grail](https://holy-grail-dottie.netlify.app/)
 - [Layered Content](https://layered-content-dottie.netlify.app/)
