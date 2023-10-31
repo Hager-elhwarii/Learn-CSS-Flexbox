@@ -41,7 +41,8 @@ git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
 - [Grid by Example](https://gridbyexample.com/examples/)
 - [CSS Grid the easy way](https://www.youtube.com/watch?v=rg7Fvvl3taU)
 
-
+## 📘 License
+This project is **Totally Free**,  and does not contain any license.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
