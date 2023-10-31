@@ -36,10 +36,12 @@ git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
 - [Netlify](https://www.netlify.com/)
   
 ## 🌼 Resources
-- [Learn CSS Grid](https://scrimba.com/learn/cssgrid)
-- [Grid Garden](https://cssgridgarden.com/)
-- [Grid by Example](https://gridbyexample.com/examples/)
-- [CSS Grid the easy way](https://www.youtube.com/watch?v=rg7Fvvl3taU)
+- [Learn Flexbox](https://scrimba.com/learn/flexbox)
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+- [Flexbox and Grid](https://www.codecademy.com/learn/learn-css-flexbox-and-grid)
+- [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+
 
 ## 📘 License
 This project is **Totally Free**,  and does not contain any license.
