@@ -35,12 +35,21 @@ git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
 - [Flaticon](https://www.flaticon.com/)
 - [Netlify](https://www.netlify.com/)
   
+  
 ## 🌼 Resources
 - [Learn Flexbox](https://scrimba.com/learn/flexbox)
 - [Flexbox Froggy](https://flexboxfroggy.com/)
 - [Flexbox and Grid](https://www.codecademy.com/learn/learn-css-flexbox-and-grid)
 - [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
+
+
+## 🦄 Author
+> If you want to get in-touch with me you can reach me at:
+
+-  [Email](http://hager.a.elhawary@gmail.com/)
+-  [LinkedIn](https://www.linkedin.com/in/hager-omar-elhawary/)
+-  [GitHub](https://github.com/Hager-elhwarii)
 
 
 ## 📘 License
