@@ -28,6 +28,13 @@ I created this repo as a resource to help you better understand and learn `CSS F
 git clone https://github.com/Hager-elhwarii/Learn-CSS-Flexbox.git
 ```
 
+## 📌 Acknowledgments
+- [Google Fonts](http://hager.a.elhawary@gmail.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Iconify Design](https://iconify.design/)
+- [Flaticon](https://www.flaticon.com/)
+- [Netlify](https://www.netlify.com/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
